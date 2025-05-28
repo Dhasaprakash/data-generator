@@ -1,4 +1,5 @@
 table_name: customer_address
+model_variable: addresses
 model_class: com.example.model.CustomerAddress
 records_per_parent: 2
 fields:

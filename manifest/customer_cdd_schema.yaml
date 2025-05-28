@@ -1,4 +1,5 @@
 table_name: customer_due_diligence
+model_variable: customerDueDiligence
 model_class: com.example.model.CustomerDueDiligence
 records_per_parent: 1
 fields:

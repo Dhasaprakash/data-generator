@@ -1,4 +1,5 @@
 table_name: customer_contact
+model_variable: contacts
 model_class: com.example.model.CustomerContact
 records_per_parent: 3
 fields:

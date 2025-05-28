@@ -431,3 +431,5 @@ docker compose down -v
 docker compose exec kafka kafka-topics --create --if-not-exists --topic customer-profiles --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092 ``to create topic``
 
 docker compose exec kafka kafka-topics --list --bootstrap-server localhost:9092 ``to verify topic existence``
+
+python fake_data_generator.py --root-records 1 --output generated_data.json --kafka-bootstrap-servers localhost:9092

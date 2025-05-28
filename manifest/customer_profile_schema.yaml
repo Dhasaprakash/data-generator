@@ -1,4 +1,5 @@
 table_name: customer_profile
+model_variable: profile
 model_class: com.example.model.CustomerProfile
 fields:
   - name: TENANT_ID
