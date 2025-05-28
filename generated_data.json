@@ -1,0 +1,161 @@
+{
+  "customer_profile": [
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "PROFILE_TYPE": "I",
+      "PROFILE_STATUS": "DELETED",
+      "RELATIONSHIP_NUMBER": "REL85190227650210",
+      "FIRST_NAME": "Troy",
+      "MIDDLE_NAME": "Lindsay",
+      "LAST_NAME": "Scott",
+      "FULL_NAME": "Troy Lindsay Scott"
+    }
+  ],
+  "customer_address": [
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "ADDRESS_TYPE": "RES",
+      "ADDRESS_1": "576",
+      "ADDRESS_2": "Sheena Burgs",
+      "ADDRESS_3": "647 Kathleen Stravenue",
+      "NEAREST_LANDMARK": "Lopez Viaduct",
+      "CITY_NAME": "Johnburgh",
+      "STATE_NAME": "Louisiana",
+      "COUNTRY_CODE": "AD",
+      "POSTAL_CODE": "23329",
+      "WAU_FLAG": "Y",
+      "MAIL_ADDR_IND": "Y",
+      "ADDRESS_CLASSIFICATION": "R",
+      "POST_BOX_NO": "PO8811",
+      "RMAIL_COUNTER": "6",
+      "RESET_RMAIL_FLAG": "N",
+      "MAKER_ID": "collinsjames",
+      "CHECKER_ID": "johnsongary",
+      "CHECKER_TIMESTAMP": "1987-01-07T04:35:24.459652",
+      "MAKER_TIMESTAMP": "2020-12-17T08:31:06.541934",
+      "POA_DOCUMENT": "POA1333",
+      "STATE_CODE": "MT",
+      "SYSTEM_LAST_AMENDED": "RLS",
+      "USER_LAST_AMENDED": "wattsjanet",
+      "SYSTEM_ID": "SYS4485"
+    },
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "ADDRESS_TYPE": "OFF",
+      "ADDRESS_1": "28201",
+      "ADDRESS_2": "Robert Course",
+      "ADDRESS_3": "9263 Johnson Valley",
+      "NEAREST_LANDMARK": "Daniel Prairie",
+      "CITY_NAME": "East Jason",
+      "STATE_NAME": "Vermont",
+      "COUNTRY_CODE": "BF",
+      "POSTAL_CODE": "20638",
+      "WAU_FLAG": "N",
+      "MAIL_ADDR_IND": "Y",
+      "ADDRESS_CLASSIFICATION": "O",
+      "POST_BOX_NO": "PO3924",
+      "RMAIL_COUNTER": "6",
+      "RESET_RMAIL_FLAG": "N",
+      "MAKER_ID": "hkeller",
+      "CHECKER_ID": "megan85",
+      "CHECKER_TIMESTAMP": "2013-06-05T18:15:51.180530",
+      "MAKER_TIMESTAMP": "2022-10-14T05:56:51.502382",
+      "POA_DOCUMENT": "POA3638",
+      "STATE_CODE": "FL",
+      "SYSTEM_LAST_AMENDED": "CEMS",
+      "USER_LAST_AMENDED": "morgangalvan",
+      "SYSTEM_ID": "SYS7481"
+    }
+  ],
+  "customer_address_exception": [
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "ADDRESS_TYPE": "RES",
+      "EXCEPTION_TYPE": "UNDELIVERABLE",
+      "EXCEPTION_STATUS": "IN_PROGRESS",
+      "EXCEPTION_DESCRIPTION": "Some knowledge foot message likely.",
+      "RESOLUTION_CODE": "VERIFIED",
+      "MAKER_ID": "monroejudy",
+      "CHECKER_ID": "ramirezsamuel",
+      "MAKER_TIMESTAMP": "1985-08-11T08:04:16.480564",
+      "CHECKER_TIMESTAMP": "1994-04-16T10:07:57.461467"
+    },
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "ADDRESS_TYPE": "OFF",
+      "EXCEPTION_TYPE": "INVALID_POSTCODE",
+      "EXCEPTION_STATUS": "CLOSED",
+      "EXCEPTION_DESCRIPTION": "Public culture most study kind physical along.",
+      "RESOLUTION_CODE": "CORRECTED",
+      "MAKER_ID": "brendahernandez",
+      "CHECKER_ID": "zmoore",
+      "MAKER_TIMESTAMP": "2009-07-20T00:15:47.645682",
+      "CHECKER_TIMESTAMP": "1988-11-18T11:35:17.800127"
+    }
+  ],
+  "customer_cdd": [
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "RISK_CATEGORY": "MEDIUM",
+      "KYC_STATUS": "COMPLETE",
+      "LAST_REVIEW_DATE": "2000-01-16T08:54:36.588491",
+      "NEXT_REVIEW_DATE": "2022-08-15T02:22:26.025728",
+      "OCCUPATION": "Retail banker",
+      "INCOME_RANGE": "0-50K",
+      "SOURCE_OF_FUNDS": "SALARY",
+      "POLITICALLY_EXPOSED": "Y",
+      "SANCTIONS_CHECK": "REVIEW",
+      "MAKER_ID": "nicholas69",
+      "CHECKER_ID": "adamscaleb",
+      "MAKER_TIMESTAMP": "1979-04-16T15:25:15.207804",
+      "CHECKER_TIMESTAMP": "2004-04-21T19:11:15.767401"
+    }
+  ],
+  "customer_contact": [
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "CONTACT_TYPE": "TEL",
+      "contact_value": "+1-353-674-5255x121",
+      "CONTACT_VALUE": "+1-353-674-5255x121",
+      "PREFERRED_FLAG": "N",
+      "CONTACT_STATUS": "ACTIVE",
+      "MAKER_ID": "michael10",
+      "CHECKER_ID": "tammy72",
+      "MAKER_TIMESTAMP": "1985-07-20T17:20:32.589287",
+      "CHECKER_TIMESTAMP": "2000-06-22T22:07:27.537146"
+    },
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "CONTACT_TYPE": "MOB",
+      "contact_value": "888.668.2586",
+      "CONTACT_VALUE": "888.668.2586",
+      "PREFERRED_FLAG": "N",
+      "CONTACT_STATUS": "ACTIVE",
+      "MAKER_ID": "dsilva",
+      "CHECKER_ID": "timothyhall",
+      "MAKER_TIMESTAMP": "1999-09-25T16:40:20.169236",
+      "CHECKER_TIMESTAMP": "1973-11-28T11:13:18.259762"
+    },
+    {
+      "TENANT_ID": "SG001",
+      "PROFILE_ID": "CUST72571540402677",
+      "CONTACT_TYPE": "EML",
+      "contact_value": "obrienemily@example.net",
+      "CONTACT_VALUE": "obrienemily@example.net",
+      "PREFERRED_FLAG": "N",
+      "CONTACT_STATUS": "INACTIVE",
+      "MAKER_ID": "mary67",
+      "CHECKER_ID": "josephlee",
+      "MAKER_TIMESTAMP": "1972-08-25T07:23:34.227900",
+      "CHECKER_TIMESTAMP": "1973-12-31T04:19:03.212172"
+    }
+  ]
+}
