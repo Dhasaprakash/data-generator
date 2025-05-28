@@ -1,0 +1,44 @@
+table_name: customer_address_exception
+records_per_parent: 1
+fields:
+  - name: TENANT_ID
+    type: string
+    faker_method: "constant:SG001"
+    is_primary_key: true
+  - name: PROFILE_ID
+    type: string
+    references:
+      table: customer_address
+      field: PROFILE_ID
+    is_primary_key: true
+  - name: ADDRESS_TYPE
+    type: string
+    references:
+      table: customer_address
+      field: ADDRESS_TYPE
+    is_primary_key: true
+  - name: EXCEPTION_TYPE
+    type: string
+    faker_method: "random_element:['ADDRESS_MISMATCH','INVALID_POSTCODE','UNDELIVERABLE']"
+    is_primary_key: true
+  - name: EXCEPTION_STATUS
+    type: string
+    faker_method: "random_element:['OPEN','CLOSED','IN_PROGRESS']"
+  - name: EXCEPTION_DESCRIPTION
+    type: string
+    faker_method: "sentence"
+  - name: RESOLUTION_CODE
+    type: string
+    faker_method: "random_element:['CORRECTED','VERIFIED','PENDING','NA']"
+  - name: MAKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: CHECKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: MAKER_TIMESTAMP
+    type: string
+    faker_method: "date_time"
+  - name: CHECKER_TIMESTAMP
+    type: string
+    faker_method: "date_time" 

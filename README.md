@@ -427,3 +427,7 @@ docker compose down -v
    - Check application logs: `docker compose logs app`
    - Verify all required environment variables are set in docker-compose.yml
    - Check for Java exceptions: `docker compose logs app | grep "Exception"` 
+
+docker compose exec kafka kafka-topics --create --if-not-exists --topic customer-profiles --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092 ``to create topic``
+
+docker compose exec kafka kafka-topics --list --bootstrap-server localhost:9092 ``to verify topic existence``

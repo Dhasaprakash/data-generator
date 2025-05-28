@@ -1,12 +1,10 @@
 table_name: customer_address
-model_class: com.example.model.CustomerAddress
 records_per_parent: 2
 fields:
   - name: TENANT_ID
     type: "string"
     faker_method: "constant:SG001"
     is_primary_key: true
-    variable: tenantId
   - name: PROFILE_ID
     type: string
     faker_method: "bothify:CUST##############"
@@ -14,103 +12,78 @@ fields:
       table: customer_profile
       field: PROFILE_ID
     is_primary_key: true
-    variable: profileId
   - name: ADDRESS_TYPE
     type: string
     faker_method: "random_element:['RES','OFF','PER','ALT', 'MAI']"
     is_primary_key: true
-    variable: addressType
   - name: ADDRESS_1
     type: string
     faker_method: "building_number"
-    variable: address1
   - name: ADDRESS_2
     type: string
     faker_method: "street_name"
-    variable: address2
   - name: ADDRESS_3
     type: string
-    faker_method: "street_address"
-    variable: address3
+    faker_method: "street_address"  
   - name: NEAREST_LANDMARK
     type: string
     faker_method: "street_name"
-    variable: nearestLandmark
   - name: CITY_NAME
     type: string
     faker_method: city
-    variable: cityName
   - name: STATE_NAME
     type: string
     faker_method: state
-    variable: stateName
   - name: COUNTRY_CODE
     type: string
     faker_method: "country_code"
-    variable: countryCode
   - name: POSTAL_CODE
     type: string
-    faker_method: postcode
-    variable: postalCode
+    faker_method: postcode 
   - name: WAU_FLAG
     type: string
     faker_method: "random_element:['Y','N']"
-    variable: wauFlag
   - name: MAIL_ADDR_IND
     type: string
     faker_method: "random_element:['Y']"
-    variable: mailAddrInd
   - name: ADDRESS_CLASSIFICATION
     type: string
     faker_method: "format:{ADDRESS_TYPE[0]}"
     depends_on: ["ADDRESS_TYPE"]
-    variable: addressClassification
   - name: POST_BOX_NO
     type: string
     faker_method: "bothify:PO####"
-    variable: postBoxNo
   - name: RMAIL_COUNTER
     type: string
     faker_method: "random_element:['1','2','3','4','5','6','7','8','9','10']"
-    variable: rmailCounter
   - name: RESET_RMAIL_FLAG
     type: string
     faker_method: "random_element:['Y','N']"
-    variable: resetRmailFlag
   - name: MAKER_ID
     type: string
     faker_method: "user_name"
-    variable: makerId
   - name: CHECKER_ID
     type: string
     faker_method: "user_name"
-    variable: checkerId
   - name: CHECKER_TIMESTAMP
     type: string
     faker_method: "date_time"
-    variable: checkerTimestamp
   - name: MAKER_TIMESTAMP
     type: string
     faker_method: "date_time"
-    variable: makerTimestamp
   - name: POA_DOCUMENT
     type: string
     faker_method: "bothify:POA####"
-    variable: poaDocument
   - name: STATE_CODE
     type: string
     faker_method: "state_abbr"
-    variable: stateCode
   - name: SYSTEM_LAST_AMENDED
     type: string
     faker_method: "random_element:['CEMS','SAO','RLS','ATLAS','CCMS','MSDYN']"
-    variable: systemLastAmended
   - name: USER_LAST_AMENDED
     type: string
     faker_method: "user_name"
-    variable: userLastAmended
   - name: SYSTEM_ID
     type: string
     faker_method: "bothify:SYS####"
-    variable: systemId
   

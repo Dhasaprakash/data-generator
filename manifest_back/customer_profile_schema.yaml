@@ -1,59 +1,32 @@
 table_name: customer_profile
-model_class: com.example.model.CustomerProfile
 fields:
   - name: TENANT_ID
     type: "string"
     faker_method: "bothify:SG001"
     is_primary_key: true
-    variable: tenantId
   - name: PROFILE_ID
     type: string
     faker_method: "bothify:CUST##############"
     is_primary_key: true
-    variable: profileId
   - name: PROFILE_TYPE
     type: string
     faker_method: "random_element:['I','S']"
-    variable: profileType
   - name: PROFILE_STATUS
     type: string
     faker_method: "random_element:['ACTIVE','INACTIVE','DELETED']"
-    variable: profileStatus
   - name: RELATIONSHIP_NUMBER
     type: string
     faker_method: "bothify:REL##############"
-    variable: relationshipNumber
   - name: FIRST_NAME
     type: string
     faker_method: first_name
-    variable: firstName
   - name: MIDDLE_NAME
     type: string
     faker_method: first_name
-    variable: middleName
   - name: LAST_NAME
     type: string
     faker_method: last_name
-    variable: lastName
   - name: FULL_NAME
     type: string
     faker_method: "format:{FIRST_NAME} {MIDDLE_NAME} {LAST_NAME}"
     depends_on: ["FIRST_NAME", "MIDDLE_NAME", "LAST_NAME"]
-    variable: fullName
-
-relationships:
-  - name: addresses
-    type: one_to_many
-    target_entity: CustomerAddress
-    variable: addresses
-    schema_file: customer_address_schema.yaml
-  - name: contacts
-    type: one_to_many
-    target_entity: CustomerContact
-    variable: contacts
-    schema_file: customer_contact_schema.yaml
-  - name: customerDueDiligence
-    type: one_to_many
-    target_entity: CustomerDueDiligence
-    variable: customerDueDiligence
-    schema_file: customer_cdd_schema.yaml
