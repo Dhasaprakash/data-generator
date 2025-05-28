@@ -1,0 +1,160 @@
+{
+  "profile": [
+    {
+      "tenantId": "SG001",
+      "profileId": "CUST48972466643562",
+      "profileType": "I",
+      "profileStatus": "ACTIVE",
+      "relationshipNumber": "REL26610777915343",
+      "firstName": "Julie",
+      "middleName": "Heather",
+      "lastName": "Williams",
+      "fullName": "Julie Heather Williams",
+      "addresses": [
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "addressType": "PER",
+          "address1": "51705",
+          "address2": "Huffman Lodge",
+          "address3": "031 Soto Glens",
+          "nearestLandmark": "Gregory Pines",
+          "cityName": "Rojasmouth",
+          "stateName": "Iowa",
+          "countryCode": "OM",
+          "postalCode": "96837",
+          "wauFlag": "N",
+          "mailAddrInd": "Y",
+          "addressClassification": "P",
+          "postBoxNo": "PO8146",
+          "rmailCounter": "7",
+          "resetRmailFlag": "Y",
+          "makerId": "amberlopez",
+          "checkerId": "joel91",
+          "checkerTimestamp": "1970-11-23T20:12:31.167308",
+          "makerTimestamp": "2020-02-05T06:22:29.195608",
+          "poaDocument": "POA9546",
+          "stateCode": "WY",
+          "systemLastAmended": "ATLAS",
+          "userLastAmended": "kaylee57",
+          "systemId": "SYS5222",
+          "customer_address_exception": [
+            {
+              "tenant_id": "SG001",
+              "profile_id": "CUST48972466643562",
+              "address_type": "PER",
+              "exception_type": "INVALID_POSTCODE",
+              "exception_status": "IN_PROGRESS",
+              "exception_description": "Morning daughter food them glass.",
+              "resolution_code": "CORRECTED",
+              "maker_id": "christina65",
+              "checker_id": "katherine37",
+              "maker_timestamp": "1976-01-24T11:06:06.179976",
+              "checker_timestamp": "1976-11-14T19:22:26.823933"
+            }
+          ]
+        },
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "addressType": "OFF",
+          "address1": "83337",
+          "address2": "Davis Garden",
+          "address3": "73285 Spears Creek Apt. 756",
+          "nearestLandmark": "Jeffrey Center",
+          "cityName": "Greenberg",
+          "stateName": "Alabama",
+          "countryCode": "PA",
+          "postalCode": "62898",
+          "wauFlag": "Y",
+          "mailAddrInd": "Y",
+          "addressClassification": "O",
+          "postBoxNo": "PO9894",
+          "rmailCounter": "10",
+          "resetRmailFlag": "N",
+          "makerId": "cbaker",
+          "checkerId": "xjackson",
+          "checkerTimestamp": "2008-12-25T08:53:37.010185",
+          "makerTimestamp": "2004-11-14T14:19:36.490637",
+          "poaDocument": "POA4012",
+          "stateCode": "MD",
+          "systemLastAmended": "ATLAS",
+          "userLastAmended": "bryan02",
+          "systemId": "SYS6993",
+          "customer_address_exception": [
+            {
+              "tenant_id": "SG001",
+              "profile_id": "CUST48972466643562",
+              "address_type": "OFF",
+              "exception_type": "UNDELIVERABLE",
+              "exception_status": "IN_PROGRESS",
+              "exception_description": "Event key voice beat chair.",
+              "resolution_code": "CORRECTED",
+              "maker_id": "kellycrawford",
+              "checker_id": "kennethmorris",
+              "maker_timestamp": "1977-10-24T18:11:48.418686",
+              "checker_timestamp": "1999-08-25T06:56:49.408265"
+            }
+          ]
+        }
+      ],
+      "customerDueDiligence": [
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "riskCategory": "LOW",
+          "kycStatus": "PENDING",
+          "lastReviewDate": "2025-03-08T09:54:13.581673",
+          "nextReviewDate": "2025-06-29T14:06:00.401188",
+          "occupation": "Clinical research associate",
+          "incomeRange": "50K-100K",
+          "sourceOfFunds": "INVESTMENT",
+          "politicallyExposed": "N",
+          "sanctionsCheck": "PASS",
+          "makerId": "hbrooks",
+          "checkerId": "michaeldodson",
+          "makerTimestamp": "2024-04-20T03:46:59.108508",
+          "checkerTimestamp": "2001-09-24T21:50:27.104229"
+        }
+      ],
+      "contacts": [
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "contactType": "EML",
+          "contactValue": "georgemeyer@example.org",
+          "preferredFlag": "N",
+          "contactStatus": "INACTIVE",
+          "makerId": "ywilliams",
+          "checkerId": "qnichols",
+          "makerTimestamp": "1984-05-15T05:04:54.578310",
+          "checkerTimestamp": "2022-11-03T21:57:50.527477"
+        },
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "contactType": "EML",
+          "contactValue": "amanda43@example.com",
+          "preferredFlag": "N",
+          "contactStatus": "ACTIVE",
+          "makerId": "coxwilliam",
+          "checkerId": "lauren43",
+          "makerTimestamp": "1992-10-05T15:47:46.427196",
+          "checkerTimestamp": "2020-01-23T03:23:10.936332"
+        },
+        {
+          "tenantId": "SG001",
+          "profileId": "CUST48972466643562",
+          "contactType": "MOB",
+          "contactValue": "387.467.6599x480",
+          "preferredFlag": "N",
+          "contactStatus": "INACTIVE",
+          "makerId": "swiley",
+          "checkerId": "zreed",
+          "makerTimestamp": "1990-12-27T11:08:36.931937",
+          "checkerTimestamp": "1987-03-24T23:08:19.020271"
+        }
+      ]
+    }
+  ]
+}
