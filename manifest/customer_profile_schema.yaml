@@ -1,0 +1,32 @@
+table_name: customer_profile
+fields:
+  - name: TENANT_ID
+    type: "string"
+    faker_method: "bothify:SG001"
+    is_primary_key: true
+  - name: PROFILE_ID
+    type: string
+    faker_method: "bothify:CUST##############"
+    is_primary_key: true
+  - name: PROFILE_TYPE
+    type: string
+    faker_method: "random_element:['I','S']"
+  - name: PROFILE_STATUS
+    type: string
+    faker_method: "random_element:['ACTIVE','INACTIVE','DELETED']"
+  - name: RELATIONSHIP_NUMBER
+    type: string
+    faker_method: "bothify:REL##############"
+  - name: FIRST_NAME
+    type: string
+    faker_method: first_name
+  - name: MIDDLE_NAME
+    type: string
+    faker_method: first_name
+  - name: LAST_NAME
+    type: string
+    faker_method: last_name
+  - name: FULL_NAME
+    type: string
+    faker_method: "format:{FIRST_NAME} {MIDDLE_NAME} {LAST_NAME}"
+    depends_on: ["FIRST_NAME", "MIDDLE_NAME", "LAST_NAME"]

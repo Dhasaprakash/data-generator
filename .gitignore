@@ -48,7 +48,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+#MANIFEST
 
 # Virtual Environment
 venv/
@@ -59,7 +59,7 @@ ENV/
 pythonenv*
 
 # PyInstaller
-*.manifest
+#*.manifest
 *.spec
 
 # Jupyter Notebook

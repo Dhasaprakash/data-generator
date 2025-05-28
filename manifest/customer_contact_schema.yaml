@@ -1,0 +1,44 @@
+table_name: customer_contact
+records_per_parent: 3
+fields:
+  - name: TENANT_ID
+    type: string
+    faker_method: "constant:SG001"
+    is_primary_key: true
+  - name: PROFILE_ID
+    type: string
+    faker_method: "bothify:CUST##############"
+    references:
+      table: customer_profile
+      field: PROFILE_ID
+    is_primary_key: true
+  - name: CONTACT_TYPE
+    type: string
+    faker_method: "random_element:['MOB','TEL','EML','FAX']"
+    is_primary_key: true
+  - name: CONTACT_VALUE
+    type: string
+    faker_method: "format:{contact_value}"
+    depends_on: ["contact_value"]
+  - name: contact_value
+    type: string
+    faker_method: "conditional:CONTACT_TYPE:{'MOB':'phone_number','TEL':'phone_number','EML':'email','FAX':'phone_number'}"
+    depends_on: ["CONTACT_TYPE"]
+  - name: PREFERRED_FLAG
+    type: string
+    faker_method: "random_element:['Y','N']"
+  - name: CONTACT_STATUS
+    type: string
+    faker_method: "random_element:['ACTIVE','INACTIVE']"
+  - name: MAKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: CHECKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: MAKER_TIMESTAMP
+    type: string
+    faker_method: "date_time"
+  - name: CHECKER_TIMESTAMP
+    type: string
+    faker_method: "date_time" 

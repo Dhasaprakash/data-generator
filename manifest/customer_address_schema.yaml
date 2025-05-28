@@ -1,0 +1,89 @@
+table_name: customer_address
+records_per_parent: 2
+fields:
+  - name: TENANT_ID
+    type: "string"
+    faker_method: "constant:SG001"
+    is_primary_key: true
+  - name: PROFILE_ID
+    type: string
+    faker_method: "bothify:CUST##############"
+    references:
+      table: customer_profile
+      field: PROFILE_ID
+    is_primary_key: true
+  - name: ADDRESS_TYPE
+    type: string
+    faker_method: "random_element:['RES','OFF','PER','ALT', 'MAI']"
+    is_primary_key: true
+  - name: ADDRESS_1
+    type: string
+    faker_method: "building_number"
+  - name: ADDRESS_2
+    type: string
+    faker_method: "street_name"
+  - name: ADDRESS_3
+    type: string
+    faker_method: "street_address"  
+  - name: NEAREST_LANDMARK
+    type: string
+    faker_method: "street_name"
+  - name: CITY_NAME
+    type: string
+    faker_method: city
+  - name: STATE_NAME
+    type: string
+    faker_method: state
+  - name: COUNTRY_CODE
+    type: string
+    faker_method: "country_code"
+  - name: POSTAL_CODE
+    type: string
+    faker_method: postcode 
+  - name: WAU_FLAG
+    type: string
+    faker_method: "random_element:['Y','N']"
+  - name: MAIL_ADDR_IND
+    type: string
+    faker_method: "random_element:['Y']"
+  - name: ADDRESS_CLASSIFICATION
+    type: string
+    faker_method: "format:{ADDRESS_TYPE[0]}"
+    depends_on: ["ADDRESS_TYPE"]
+  - name: POST_BOX_NO
+    type: string
+    faker_method: "bothify:PO####"
+  - name: RMAIL_COUNTER
+    type: string
+    faker_method: "random_element:['1','2','3','4','5','6','7','8','9','10']"
+  - name: RESET_RMAIL_FLAG
+    type: string
+    faker_method: "random_element:['Y','N']"
+  - name: MAKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: CHECKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: CHECKER_TIMESTAMP
+    type: string
+    faker_method: "date_time"
+  - name: MAKER_TIMESTAMP
+    type: string
+    faker_method: "date_time"
+  - name: POA_DOCUMENT
+    type: string
+    faker_method: "bothify:POA####"
+  - name: STATE_CODE
+    type: string
+    faker_method: "state_abbr"
+  - name: SYSTEM_LAST_AMENDED
+    type: string
+    faker_method: "random_element:['CEMS','SAO','RLS','ATLAS','CCMS','MSDYN']"
+  - name: USER_LAST_AMENDED
+    type: string
+    faker_method: "user_name"
+  - name: SYSTEM_ID
+    type: string
+    faker_method: "bothify:SYS####"
+  

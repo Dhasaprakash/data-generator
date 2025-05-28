@@ -1,0 +1,53 @@
+table_name: customer_cdd
+records_per_parent: 1
+fields:
+  - name: TENANT_ID
+    type: string
+    faker_method: "constant:SG001"
+    is_primary_key: true
+  - name: PROFILE_ID
+    type: string
+    faker_method: "bothify:CUST##############"
+    references:
+      table: customer_profile
+      field: PROFILE_ID
+    is_primary_key: true
+  - name: RISK_CATEGORY
+    type: string
+    faker_method: "random_element:['HIGH','MEDIUM','LOW']"
+  - name: KYC_STATUS
+    type: string
+    faker_method: "random_element:['COMPLETE','PENDING','REVIEW_REQUIRED']"
+  - name: LAST_REVIEW_DATE
+    type: string
+    faker_method: "date_time"
+  - name: NEXT_REVIEW_DATE
+    type: string
+    faker_method: "date_time"
+  - name: OCCUPATION
+    type: string
+    faker_method: "job"
+  - name: INCOME_RANGE
+    type: string
+    faker_method: "random_element:['0-50K','50K-100K','100K-250K','250K+']"
+  - name: SOURCE_OF_FUNDS
+    type: string
+    faker_method: "random_element:['SALARY','BUSINESS','INVESTMENT','INHERITANCE']"
+  - name: POLITICALLY_EXPOSED
+    type: string
+    faker_method: "random_element:['Y','N']"
+  - name: SANCTIONS_CHECK
+    type: string
+    faker_method: "random_element:['PASS','FAIL','REVIEW']"
+  - name: MAKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: CHECKER_ID
+    type: string
+    faker_method: "user_name"
+  - name: MAKER_TIMESTAMP
+    type: string
+    faker_method: "date_time"
+  - name: CHECKER_TIMESTAMP
+    type: string
+    faker_method: "date_time" 

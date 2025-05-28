@@ -79,18 +79,18 @@ This will start:
 
 1. Create and activate a virtual environment:
 
-   ```bash
+```bash
    # macOS/Linux
    python3 -m venv venv
    source venv/bin/activate
 
    # Windows
-   python -m venv venv
+python -m venv venv
    .\venv\Scripts\activate
-   ```
+```
 
 2. Install dependencies:
-   ```bash
+```bash
    pip install -r python/requirements.txt
    ```
 
@@ -107,6 +107,9 @@ This will start:
 
    # Send existing JSON file to Kafka
    python python/kafka_utils.py --file data.json
+
+   # Send message and create file
+   python fake_data_generator.py --root-records 10 --output data.json --kafka-bootstrap-servers localhost:9092
    ```
 
 ### Python Script Options
@@ -174,9 +177,9 @@ docker compose logs -f app
 ### CustomerProfile
 - Basic customer information (ID, name, status)
 - One-to-many relationships with:
-  - Addresses
-  - Contacts
-  - Due Diligence records
+   - Addresses
+   - Contacts
+   - Due Diligence records
 
 ### CustomerAddress
 - Address details
