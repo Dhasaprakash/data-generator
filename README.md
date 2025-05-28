@@ -1,12 +1,16 @@
 # Customer Profile Data Pipeline
 
-This Spring Boot application consumes customer profile data from Kafka and persists it in PostgreSQL. It handles complex customer profiles with nested objects including addresses, contacts, and due diligence information.
+This project consists of two main components:
+1. A Spring Boot application that consumes customer profile data from Kafka and persists it in PostgreSQL
+2. A Python utility for generating test data and interacting with the system
 
 ## Prerequisites
 
 - Docker and Docker Compose
 - Java 17 or higher
 - Maven 3.9 or higher
+- Python 3.8 or higher
+- pip (Python package installer)
 
 ## Technology Stack
 
@@ -15,6 +19,7 @@ This Spring Boot application consumes customer profile data from Kafka and persi
 - PostgreSQL
 - Docker
 - JPA/Hibernate
+- Python 3.8+
 
 ## Project Structure
 
@@ -35,12 +40,18 @@ This Spring Boot application consumes customer profile data from Kafka and persi
 │   │   │           └── CustomerProfileApplication.java
 │   │   └── resources/
 │   │       └── application.properties
+├── python/
+│   ├── requirements.txt
+│   ├── data_generator.py
+│   └── kafka_utils.py
 ├── docker-compose.yml
 ├── Dockerfile
 └── pom.xml
 ```
 
 ## Setup and Running
+
+### Spring Boot Application
 
 1. Clone the repository:
    ```bash
@@ -63,6 +74,61 @@ This will start:
 - Kafka (port 9092)
 - PostgreSQL (port 5432)
 - Spring Boot application (port 8080)
+
+### Python Setup
+
+1. Create and activate a virtual environment:
+
+   ```bash
+   # macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
+
+   # Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r python/requirements.txt
+   ```
+
+3. Run the data generator:
+   ```bash
+   # Generate and send test data
+   python python/data_generator.py --count 10
+
+   # Generate data with specific profile types
+   python python/data_generator.py --count 5 --profile-type INDIVIDUAL
+
+   # Save generated data to file
+   python python/data_generator.py --count 3 --output data.json
+
+   # Send existing JSON file to Kafka
+   python python/kafka_utils.py --file data.json
+   ```
+
+### Python Script Options
+
+#### data_generator.py
+```bash
+Options:
+  --count INTEGER          Number of profiles to generate [default: 1]
+  --profile-type TEXT      Profile type (INDIVIDUAL/CORPORATE) [default: INDIVIDUAL]
+  --output TEXT           Output file path [optional]
+  --send-to-kafka BOOLEAN Send to Kafka directly [default: True]
+  --help                  Show this message and exit.
+```
+
+#### kafka_utils.py
+```bash
+Options:
+  --file TEXT            JSON file containing profiles to send [required]
+  --topic TEXT           Kafka topic name [default: customer-profiles]
+  --bootstrap-servers TEXT Kafka bootstrap servers [default: localhost:9092]
+  --help                 Show this message and exit.
+```
 
 ## Testing the Application
 
